@@ -13,7 +13,7 @@ const path=require('path')
 const app=express();
 const PORT=process.env.PORT || 4000;
 dotEnv.config();
-app.use(cors())
+app.use(cors());
 
 app.use('/uploads',express.static('uploads'));
 
